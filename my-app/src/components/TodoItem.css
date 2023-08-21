@@ -1,0 +1,58 @@
+.ToDoItem {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+
+  &.star {
+    order: -1;
+  }
+
+  .checkbox {
+    flex: 1;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+    .text {
+      padding-left: 1em;
+    }
+
+    &.checked {
+      #svg {
+        color: #50e3a4;
+        font-size: 18px;
+      }
+
+      .text {
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+  }
+
+  .important {
+    color: #ccc;
+    font-size: 21px;
+    cursor: pointer;
+
+    &.star {
+      color: yellow;
+    }
+
+    :hover {
+      color: yellow;
+    }
+  }
+
+  .remove {
+    cursor: pointer;
+    padding-left: 3px;
+    padding-bottom: 3px;
+
+    :hover {
+      color: red;
+    }
+  }
+}

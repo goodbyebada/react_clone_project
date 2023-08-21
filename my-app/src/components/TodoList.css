@@ -1,0 +1,16 @@
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  overflow-y: auto;
+  background: transparent;
+  height: 280px;
+
+  .TodoItem {
+    &.star {
+      order: -1;
+    }
+
+    /* 위치바뀜 */
+  }
+}
